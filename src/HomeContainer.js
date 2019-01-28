@@ -4,17 +4,17 @@ import MonthContainer from './MonthContainer';
 import DetailsContainer from './DetailsContainer'
 
 class HomeContainer extends Component {
-
   state = {
     selectedReminder: null
   }
 
-
   sidebarDates = () => {
     if (this.props.user) {
-      return this.props.user.reminders.filter(reminder=>{
+      return this.props.user.reminders.filter(reminder => {
         if (new Date(reminder.birthday) > new Date()) {
-          return (new Date(reminder.birthday)-new Date())*(1.1574e-8) <= 15
+          return (new Date(reminder.birthday) - new Date()) * (1.1574e-8) <= 15
+        } else {
+          return null
         }
       })
     }

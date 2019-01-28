@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class ViewDetails extends Component {
 
@@ -73,16 +73,10 @@ class ViewDetails extends Component {
           <i className="arrow left icon"></i>
           </div>
         </div>
-
         <div>{this.showMessageForm()}</div>
-
-
       </div>
     )
   }
 
 }
-
 export default ViewDetails
-
-// {this.props.selectedReminder ? this.props.selectedReminder.birthday : null}

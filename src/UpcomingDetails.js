@@ -1,11 +1,7 @@
 import React from "react";
 
-const UpcomingDetails = (props) => {
-
-    return(
-      <p>{props.personName} - <br></br> {props.birthday}</p>
-    )
-
+const UpcomingDetails = ({ personName, birthday }) => {
+    return <p>{personName} - <br></br> {birthday}</p>
 }
 
 export default UpcomingDetails;

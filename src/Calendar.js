@@ -62,6 +62,8 @@ class Calendar extends React.Component {
     return this.props.dates.map(reminder=>{
       if (this.compareDates(reminder, day)) {
         return <div className="viewDetails" style={{color: '#aa72ff'}} onClick={()=>    this.props.handleNameClick(reminder)} key={reminder.id}>{reminder.person_name}</div>
+      } else {
+        return null
       }
     })
   }

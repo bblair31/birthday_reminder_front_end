@@ -42,7 +42,7 @@ npm start
 
 4. React should alert you to the fact that the Rails server is already running on default port localhost:3000. It will ask if you want to use a different port. Respond with `Y`
 
-React should automatically open the application in your default browser and begin to load. If it does not, you will see the Local web address in terminal at which you can access the application via you browser
+React should automatically open the application in your default browser and begin to load. If it does not, you will see the Local web address in terminal at which you can access the application via your browser.
 
 
 ## Built With

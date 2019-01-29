@@ -6,8 +6,8 @@ class ViewDetails extends Component {
     if (this.props.showMessage === true) {
       return (
         <div className="ui container">
-          <h4 class="ui horizontal divider header">
-            <i class="mail icon"></i>
+          <h4 className="ui horizontal divider header">
+            <i className="mail icon"></i>
             Message
           </h4>
           <form className="ui form" onSubmit={(event) => this.props.handleMessageSubmit(event, this.props.selectedReminder)}>

@@ -24,19 +24,21 @@ After following the README in the Backend Repo above, make sure to run `rails s`
 
 ### Installing
 
-1. Install all required packages from Node Package Manager
+1. Fork and clone this repository
+
+2. Install all required packages from Node Package Manager
  
 ```
 npm install
 ```
 
-2. Start up the development server 
+3. Start up the development server 
 
 ```
 npm start
 ```
 
-3. React should alert you to the fact that the Rails server is already running on default port localhost:3000. It will ask if you want to use a different port. Respond with `Y`
+4. React should alert you to the fact that the Rails server is already running on default port localhost:3000. It will ask if you want to use a different port. Respond with `Y`
 
 React should automatically open the application in your default browser and begin to load. If it does not, you will see the Local web address in terminal at which you can access the application via you browser
 

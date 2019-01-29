@@ -11,8 +11,10 @@ class HomeContainer extends Component {
   sidebarDates = () => {
     if (this.props.user) {
       return this.props.user.reminders.filter(reminder => {
-        if (new Date(reminder.birthday) > new Date()) {
-          return (new Date(reminder.birthday) - new Date()) * (1.1574e-8) <= 15
+        let birthdate = new Date(reminder.birthday)
+        let today = new Date()
+        if (birthdate > today && ((birthdate - today) * (1.1574e-8) <= 15)) {
+          return reminder
         } else {
           return null
         }
@@ -20,13 +22,14 @@ class HomeContainer extends Component {
     }
   }
 
-  handleNameClick = (reminder)=>{
+  handleNameClick = (reminder) => {
     this.setState({
       selectedReminder: reminder
     }, () => this.props.passUpSelected(reminder))
   }
 
   render(){
+    console.log(this.sidebarDates())
     return(
       <div className="ui grid">
         <Sidebar sidebarDates={this.sidebarDates()}/>

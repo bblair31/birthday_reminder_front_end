@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import UpcomingDetails from './UpcomingDetails';
+import React, { Component } from 'react'
+import UpcomingDetails from './UpcomingDetails'
 
 class Sidebar extends Component {
 
-  mapThroughUpcoming = ()=> {
-    return this.props.sidebarDates.map(date=>{
+  mapThroughUpcoming = () => {
+    return this.props.sidebarDates.map(date => {
       return <UpcomingDetails key={date.id} birthday={date.birthday} personName={date.person_name}/>
     })
   }
@@ -18,7 +18,5 @@ class Sidebar extends Component {
       </div>
     )
   }
-
 }
-
 export default Sidebar

@@ -4,11 +4,9 @@ import MonthContainer from './MonthContainer';
 import DetailsContainer from './DetailsContainer'
 
 class HomeContainer extends Component {
-
   state = {
     selectedReminder: null
   }
-
 
   sidebarDates = () => {
     if (this.props.user) {

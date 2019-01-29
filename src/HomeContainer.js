@@ -31,6 +31,7 @@ class HomeContainer extends Component {
   }
 
   render(){
+    console.log(this.sidebarDates())
     return(
       <div className="ui grid">
         <Sidebar sidebarDates={this.sidebarDates()}/>

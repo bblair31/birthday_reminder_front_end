@@ -10,7 +10,7 @@ class ViewDetails extends Component {
             <i className="mail icon"></i>
             Message
           </h4>
-          <form className="ui form" onSubmit={(event) => this.props.handleMessageSubmit(event, this.props.selectedReminder)}>
+          <form className="ui form" onSubmit={event => this.props.handleMessageSubmit(event, this.props.selectedReminder)}>
             <div className="field">
               <label>Enter Birthday Message Here</label>
               <input type="text" onChange={this.props.handleMessageChange} name="birthdayMessage"  placeholder="Type your message"/>

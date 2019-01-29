@@ -4,7 +4,8 @@ import UpcomingDetails from './UpcomingDetails'
 class Sidebar extends Component {
 
   mapThroughUpcoming = () => {
-    return this.props.sidebarDates.map(date => {
+    let dates = this.props.sidebarDates.sort((a,b) => new     Date(a.birthday) - new Date(b.birthday))
+    return dates.map(date => {
       return <UpcomingDetails key={date.id} birthday={date.birthday} personName={date.person_name}/>
     })
   }
